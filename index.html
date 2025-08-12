@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <h1 id="titulo">Lista de tarefas</h1>
+
+
+    <div id="campoeditar">
+        <p id="tituloeditar">- Editar -</p>
+        <div id="containerbotoes">
+            <button id="btordenar">Ordenar A/Z</button>
+            <button id="btlimparlista" onclick="limpar()">Limpar Lista 🗑️</button>
+            <button id="btfiltrar">Filtrar p/</button>
+
+        </div>  
+
+    </div>
+
+    
+    <div id="blocolistagem">
+        <input id="inputadicionar" type="text" placeholder="Tarefa">
+        <button id="btadicionar" onclick="adicionartarefa()">Adicionar</button>
+        <button id="btdesfazer" onclick="desfazer()">Desfazer</button>       
+    </div>
+
+
+    <div id="blocolista">
+        <ul id="lista">
+
+
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
